@@ -8,16 +8,19 @@ Nearby Hospitals — Stay safe with emergency info
 Wellness & Treatment — Spas, yoga retreats, and health centers
 Interest-based Filtering — Adventure, Religious, or Nature trips
 Beautiful Dark UI — Luxury travel aesthetic with responsive design
+
 🗂️ Project Structure
 travel-planner/
 ├── app.py               ← Flask backend & API logic
 ├── templates/
 │   └── index.html       ← Frontend (HTML + CSS combined)
 └── README.md
+
 ⚙️ Requirements
 Python 3.7+
 Flask
 Requests
+
 📦 Installation
 1. Clone or download the project
 
@@ -33,47 +36,66 @@ Open app.py and replace the API key on this line:
 OPENTRIP_API_KEY = "your_api_key_here"
 Get a free key at: https://opentripmap.io/product
 
+
 🚀 Running the App
 python app.py
 Then open your browser and go to:
 
 http://127.0.0.1:5000
+
 🧠 How It Works
-User enters a city name, number of days, and interest (Adventure / Religious / Nature)
-The app calls the OpenTripMap Geoname API to get the city's coordinates
-It then fetches nearby attractions, hotels, shops, hospitals, and wellness centers
-A simple rule-based AI filters attractions by matching keywords to the selected interest
-A day-by-day itinerary is generated and displayed along with all other categories
+
+1 . User enters a city name, number of days, and interest (Adventure / Religious / Nature)
+2 . The app calls the OpenTripMap Geoname API to get the city's coordinates
+3 . It then fetches nearby attractions, hotels, shops, hospitals, and wellness centers
+4 . A simple rule-based AI filters attractions by matching keywords to the selected interest
+5 . A day-by-day itinerary is generated and displayed along with all other categories
+
 🔑 API Used
-API	Purpose	Link
-OpenTripMap	Places, attractions, hotels, hospitals	https://opentripmap.io
+
+API	- OpenTripMap
+purpose- places ,attractions, hotels, hospitals	
+Link- https://opentripmap.io
+
 🎨 Tech Stack
-Layer	Technology
-Backend	Python, Flask
-Frontend	HTML, CSS (Cormorant Garamond + Outfit fonts)
-API	OpenTripMap REST API
-Templating	Jinja2 (Flask)
+
+Backend	---Python,Flask
+Frontend---	HTML, CSS (Cormorant Garamond + Outfit fonts)
+API	---OpenTripMap REST API
+Templating	---Jinja2 (Flask)
+
 📸 UI Preview
+
 The app features a dark luxury travel aesthetic with:
 
-Gold accent colors on a deep navy background
-Two-column results grid for hotels, shopping, hospitals & wellness
-Color-coded sections for easy scanning
-Fully responsive layout
-⚠️ Known Limitations
-OpenTripMap free tier has rate limits (1 request/second)
-Some smaller cities may return limited results
-Hotel/shop data depends on OpenTripMap's coverage for that region
-The AI recommendation is rule-based (keyword matching), not ML-powered
-🛠️ Future Improvements
-Integrate Google Places API for richer hotel/shop data
-Add weather forecast for travel dates
-Export itinerary as PDF
-Add map view using Leaflet.js
-User login to save past trips
-📄 License
+- Gold accent colors on a deep navy background
+- Two-column results grid for hotels, shopping, hospitals & wellness
+- Color-coded sections for easy scanning
+- Fully responsive layout
+
+  ⚠️ Known Limitations
+  
+- OpenTripMap free tier has rate limits (1 request/second)
+- Some smaller cities may return limited results
+- Hotel/shop data depends on OpenTripMap's coverage for that region
+- The AI recommendation is rule-based (keyword matching), not ML-powered
+
+ 🛠️ Future Improvements
+ 
+- Integrate Google Places API for richer hotel/shop data
+- Add weather forecast for travel dates
+- Export itinerary as PDF
+- Add map view using Leaflet.js
+- User login to save past trips
+
+  📄 License
+  
 This project is open source and free to use for personal and educational purposes.
 
 🙋 Author
+
 Built with Flask + OpenTripMap API.
 Feel free to contribute or raise issues!
+
+
+
